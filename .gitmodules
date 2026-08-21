@@ -1,0 +1,3 @@
+[submodule "blash"]
+	path = blash
+	url = https://github.com/Arancia-3-Open-Services/blash.git
