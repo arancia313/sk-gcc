@@ -1,0 +1,16 @@
+// Those are just directories for the store... And even other components.
+{
+              "vars": {
+                            "A3N": "home//Arancia-3-Network",
+                            "b":   "~/Arancia-3-Network/b"
+              },
+              "directories": [
+                            /* The very first line of the directory is the blash, but the others
+                               at the bottom are for the server itself. Don't touch this thing if you don't
+                               know exactly what you're doing.
+                            */
+                                          "$b",
+                                          "$A3N/net/statistics/ping.A3",
+                                          "$A3N/net/statistics/games.A3"
+              ]
+}
