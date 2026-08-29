@@ -2,7 +2,7 @@
 {
               "vars": {
                             "$A3N": "./A3/Arancia-3-Network",
-                            "$b":   "./b"
+                            "$b":   "./A3/Arancia-3-Network/b"
               },
               "directories": [
                             /* The very first line of the directory is the blash, but the others
@@ -10,10 +10,11 @@
                                know exactly what you're doing.
                             */
                                           "$b",
+                                          // The A3N directories.
                                           "$A3N/net/statistics/ping.A3",
                                           "$A3N/net/statistics/games.A3",
                                           "$A3N/net/local_accounts.A3",
-                                          "$A3N/net/log.txt"
-                                          "$A3N"
+                                          "$A3N/net/log.txt",
+                                          "$A3N/"
               ]
 }
