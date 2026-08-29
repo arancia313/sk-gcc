@@ -1,7 +1,7 @@
 // Those are just directories for the store... And even other components.
 {
               "vars": {
-                            "$A3N": ".",
+                            "$A3N": "./A3/Arancia-3-Network",
                             "$b":   "./b"
               },
               "directories": [
@@ -14,5 +14,6 @@
                                           "$A3N/net/statistics/games.A3",
                                           "$A3N/net/local_accounts.A3",
                                           "$A3N/net/log.txt"
+                                          "$A3N"
               ]
 }
