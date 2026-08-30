@@ -10,5 +10,3 @@ radical:
 	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/gougd.A3 $(HOME)/A3/sk-gcc/blash/blashmodules/gougd.A3O
 	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/maxinum.A3 $(HOME)/A3/sk-gcc/blash/blashmodules/maxinum.A3O
 	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/lazybum.A3 $(HOME)/A3/sk-gcc/blash/blashmodules/lazybum.A3O
-copy-lib:
-	$(Q)
