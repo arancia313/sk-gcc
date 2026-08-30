@@ -1,8 +1,10 @@
-// Those are just directories for the store... And even other components.
+ // (C) Arancia 3 Technologies.inc. All rights reserved.
+// Official directories for the components and the compilator (sk-gcc).
 {
               "vars": {
-                            "$A3N": "./A3/Arancia-3-Network",
-                            "$b":   "./A3/Arancia-3-Network/b"
+                            "$A3N": "./A3/Arancia-3-Network", //////
+                          "sk_gcc": "./A3/sk-gcc", ////////////////
+                            "$b":   "./A3/Arancia-3-Network/b" ///
               },
               "directories": [
                             /* The very first line of the directory is the blash, but the others
