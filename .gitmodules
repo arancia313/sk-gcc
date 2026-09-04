@@ -1,3 +1,6 @@
 [submodule "blash"]
 	path = blash
 	url = https://github.com/Arancia-3-Open-Services/blash.git
+[submodule "SK-2"]
+	path = SK-2
+	url = https://github.com/Arancia-3-Open-Services/SK-2.git
