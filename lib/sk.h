@@ -13,6 +13,7 @@ static inline void setService(void) {
     hint: You can use acorn like this:
     hint:
     hint: #include <stdio.h>
+    hint: #include "./sk-gcc/lib/sk.h"
     hint:
     hint: int main(void) {
     hint:     acornst("Aoo!", NULL);
@@ -28,10 +29,27 @@ static inline void setService(void) {
 
 static inline void acornst(const char *formatst, const char *contentst)
 {
-            printf(formatst, contentst);
+    printf(formatst, contentst);
 };
 
 static inline void acorn(const char *format, const char *content)
 {
-            pspDebugScreenPrintf(format, content);
+    pspDebugScreenPrintf(format, content);
+};
+
+static inline void acornCls(void)
+{
+    pspDebugScreenClear();
+};
+
+static inline void SPLset(const char *ostache, const char *sssssssss, const char *ppppppppp, const char *lllllllll)
+{
+    acorn("Launched %s.\n", ostache);
+    acorn("S | : | %s\n", sssssssss);
+    acorn("P | : | %s\n", ppppppppp);
+    acorn("L | : | %s\n", lllllllll);
+    const char *splS = sssssssss;
+    const char *splP = ppppppppp;
+    const char *splL = lllllllll;
+    acorn("All set.", NULL);
 }
