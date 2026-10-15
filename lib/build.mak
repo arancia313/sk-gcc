@@ -10,3 +10,12 @@ LD  	= sk-agcc
 AR	= sk-agcc-ar
 A3N	= sk-agcc-a3n
 FIXUP	= sk-gcc-fixup-imports
+TARGET	= sk-gcc-targets
+
+all:
+	mkdir -r ../../$(TARGET).A3O
+
+# Parameters.
+ifndef SKTARGET
+SKTARGET = NULL
+endif
