@@ -1,5 +1,11 @@
+#ifndef SK_H
+#define SK_H
 #include <stdio.h>
 #include <pspsdk.h>
+#include <string.h>
+#include <pspiofilemgr.h>
+#include <pspkernel.h>
+#include <pspctrl.h>
 
 static inline void setService(void) {
     return;
@@ -10,7 +16,7 @@ static inline void setService(void) {
     hint: acorn is way more advanced and contains more returning, but
     hint: It wll slow down a little bit the printf procedure.
     hint: Use acorn only if you need to do textual GUIs.
-    hint: You can use acorn like this:
+    hint: You can use acornst like this:
     hint:
     hint: #include <stdio.h>
     hint: #include "./sk-gcc/lib/sk.h"
@@ -52,4 +58,33 @@ static inline void SPLset(const char *ostache, const char *sssssssss, const char
     const char *splP = ppppppppp;
     const char *splL = lllllllll;
     acorn("All set.", NULL);
-}
+};
+
+// A small file helper.
+/*
+              hint: thing:  Target.
+              hint: thing2: Partition.
+              hint: s0:     Filename (argument must ALWAYS end with "."!).
+              hint: s1:     Extension.
+              hint: thing3: Permissions.
+              hint: thing4: Permission Numbers.
+              hint: thing5: content for content variable.
+*/
+static inline void fcopen(const char *thing, const char *thing2, const char *s0, const char *s1, int *thing3, int *thing4, const char *thing5)
+{
+              char fullpath[256];
+              snprintf(fullpath, sizeof(fullpath), "%s%s%s", thing2, s0, s1);
+
+              int thingh = sceIoOpen(fullpath, thing3, thing4);
+              if (thingh < 0)
+              {
+                            return;
+              }
+              else
+              {
+                            const char *content = thing5;
+                            sceIoWrite(thingh, thing5, strlen(thing5));
+                            sceIoClose(thingh);
+              };
+};
+#endif
