@@ -1,3 +1,4 @@
+#pragma once
 #ifndef SK_H
 #define SK_H
 #include <stdio.h>
@@ -19,7 +20,7 @@ static inline void setService(void) {
     hint: You can use acornst like this:
     hint:
     hint: #include <stdio.h>
-    hint: #include "./sk-gcc/lib/sk.h"
+    hint: #include "./sk-gcc/lib/skst.h"
     hint:
     hint: int main(void) {
     hint:     acornst("Aoo!", NULL);
@@ -32,11 +33,6 @@ static inline void setService(void) {
     hint: for PSP homebrew development, you need to use "acorn".
     hint: If you're trying to setup a standard C file, you need to use "acornst".
 */ 
-
-static inline void acornst(const char *formatst, const char *contentst)
-{
-    printf(formatst, contentst);
-};
 
 static inline void acorn(const char *format, const char *content)
 {
@@ -87,4 +83,9 @@ static inline void fcopen(const char *thing, const char *thing2, const char *s0,
                             sceIoClose(thingh);
               };
 };
+
+/*
+    hint: DO NOT TOUCH OR REMOVE THIS BELOW,
+    HINT: AS YOU AN GET A COMPILATON ERROR!!!
+*/
 #endif
