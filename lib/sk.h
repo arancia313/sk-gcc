@@ -83,7 +83,6 @@ static inline void fcopen(const char *thing, const char *thing2, const char *s0,
                             sceIoClose(thingh);
               };
 };
-
 /*
     hint: DO NOT TOUCH OR REMOVE THIS BELOW,
     HINT: AS YOU AN GET A COMPILATON ERROR!!!
