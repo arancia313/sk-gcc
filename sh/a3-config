@@ -1,4 +1,4 @@
-#!usr/bin/bash
+#!/usr/bin/bash
 echo "[Arancia 3 Configurations]"
 echo "Usage: a3-config [opts]"
 echo "Options:"
