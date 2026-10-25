@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-echo "SK-GCC Just responded."
+echo "sk-gcc: Just responded."
