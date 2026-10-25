@@ -1,2 +1,5 @@
 #!/usr/bin/bash
-echo "Aoo!"
+clear
+echo "-----------------------"
+echo "Arancia 3 Configuration"
+echo "-----------------------"
