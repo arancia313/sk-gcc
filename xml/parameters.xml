@@ -1,3 +1,4 @@
 <NAME>SK-GCC Parameters</NAME>
-<PARAM> JIOgetservice / </PARAM></PARAMA3NSET> Arancia 3 Network <PARAMA3NSET><PARAMSK2SET> SK-2 </PARAMSK2SET>
-<CC> sk-gcc </CC>
+<CC>  sk-gcc  </CC>
+<CXX> sk-gxx  </CXX>
+<AS>  sk-agcc </AS>
