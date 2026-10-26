@@ -1,5 +1,5 @@
-include ../sk-gcc/include/general.mak
-skgcc  = $(sk_gcc)/lib/build.mak
+SK = $(SKGCC)
+include $(SK)/include/general.mak
 # hint: On this file, there are some parameters for
 # hint: services like Arancia 3 Network, etc.
 ifeq ($(skgcc),)
