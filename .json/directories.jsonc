@@ -11,12 +11,12 @@
                                at the bottom are for the server itself. Don't touch this thing if you don't
                                know exactly what you're doing.
                             */
-                                          "$b",
-                                          // The A3N directories.
-                                          "$A3N/net/statistics/ping.A3",
-                                          "$A3N/net/statistics/games.A3",
-                                          "$A3N/net/local_accounts.A3",
-                                          "$A3N/net/log.txt",
-                                          "$A3N/"
+                                          "$b", /////////////////////////////////
+                                          // The A3N directories. //////////////
+                                          "$A3N/net/statistics/ping.A3", //////
+                                          "$A3N/net/statistics/games.A3", ////
+                                          "$A3N/net/local_accounts.A3", /////
+                                          "$A3N/net/log.txt", //////////////
+                                          "$A3N/" /////////////////////////
               ]
 }
