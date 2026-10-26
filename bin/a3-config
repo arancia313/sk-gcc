@@ -6,3 +6,7 @@ echo "--------------------------------------------------------------"
 echo "-p, --sk-gcc-path       : Prints the base directory of SK-GCC."
 echo "-P, --sk-gcc-a3-path    : Prints the base install directory."
 echo "--------------------------------------------------------------"
+echo "Press ^C (Ctrl + C) to exit."
+while (1) {
+              return;
+}
