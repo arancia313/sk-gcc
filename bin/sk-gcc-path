@@ -1,1 +1,1 @@
-echo "$SKGCC"
+echo "sk-gcc: Your path is $SKGCC."
