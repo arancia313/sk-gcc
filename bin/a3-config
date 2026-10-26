@@ -1,4 +1,4 @@
-echo "[Arancia 3 Configurations]"
+secho "[Arancia 3 Configurations]"
 echo "Usage: a3-config [opts]"
 echo "Options:"
 echo "--------------------------------------------------------------"
