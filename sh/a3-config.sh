@@ -1,8 +1,0 @@
-#!/usr/bin/bash
-echo "[Arancia 3 Configurations]"
-echo "Usage: a3-config [opts]"
-echo "Options:"
-echo "--------------------------------------------------------------"
-echo "-p, --sk-gcc-path       : Prints the base directory of SK-GCC."
-echo "-P, --sk-gcc-a3-path    : Prints the base install directory."
-echo "--------------------------------------------------------------"
