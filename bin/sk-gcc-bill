@@ -1,0 +1,3 @@
+echo "Exporting SK-GCC Modules."
+export SK=$SKGCC
+export PATH=$PATH:$SK/bin
