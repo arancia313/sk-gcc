@@ -1,4 +1,5 @@
 cd $SKGCC
 echo "sk-gcc: Verifying if there are updates."
 git reset --hard HEAD
+git submodule update --init --recursive
 git pull
