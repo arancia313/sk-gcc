@@ -1,0 +1,4 @@
+echo "sk-gcc: Removing SK-GCC Toolchain..."
+sudo rm -rf $SKGCC
+echo "sk-gcc: Removal is complete."
+echo "sk-gcc: If you still have the .bashrc modules inserted, it's best you remove them."
