@@ -2,7 +2,7 @@ SK = $(SKGCC)
 include $(SK)/include/general.mak
 # hint: On this file, there are some parameters for
 # hint: services like Arancia 3 Network, etc.
-ifeq ($(skgcc),)
+ifeq ($(SK),)
 $(error SK-GCC is undefined. You need to include "SK = $(SKGCC)" in your Makefile!)
 endif
 CC  	= sk-gcc
@@ -12,10 +12,10 @@ LD  	= sk-agcc
 AR	= sk-agcc-ar
 A3N	= sk-agcc-a3n
 FIXUP	= sk-gcc-fixup-imports
-TARGET	= sk-gcc-targets
 CONFIG	= a3-config
 
 # Parameters for converting .sb3 files.
+
 ifndef SKTARGET
 CONFIG SKTARGET
 SKTARGET = NULL
@@ -23,3 +23,5 @@ endif
 
 build:
 	$(Q)cp $(SKTARGET).sb3 $(SKTARGET).psk
+ripe:
+	rm -rf *.psk
