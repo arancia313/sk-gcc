@@ -13,6 +13,10 @@ ifeq ($(SKTARGET),)
 $(error Please specify SKTARGET so that you tell me which files i should pack)
 endif
 
+ifneq ($(BLOW_WIPACKSYS),)
+$(error BLOW_WIPACKSYS should NOT be defined when building a .psk combined with a .sb file)
+endif
+
 CC  	= sk-gcc
 CXX 	= sk-gxx
 AS  	= sk-agcc

@@ -34,6 +34,11 @@ EXPAND_MEM = 1020
 A3PACK = skpack
 endif
 
+ifndef BLOW_WIPACKSYS
+EXPAND_MEM = 777
+BLOW_WIPACKSYS = NULL
+endif
+
 build:
 # SK-GCC does not compile, it just creates a proprietary
 # encrypted version of the file. It does this just by
