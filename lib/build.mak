@@ -9,6 +9,10 @@ ifeq ($(A3PACK),)
 $(warning A3 pack is not set. Defaulting to skpack.psk instead.)
 endif
 
+ifeq ($(SKTARGET),)
+$(error Please specify SKTARGET so that you tell me which files i should pack)
+endif
+
 CC  	= sk-gcc
 CXX 	= sk-gxx
 AS  	= sk-agcc
