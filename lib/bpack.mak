@@ -49,13 +49,13 @@ EXPAND_MEM = 11
 BLOW_WISYSCALL = 0
 endif
 
-build_sb3:
+sb3:
 # We need to tell SK-GCC what to do with your .sb3 file (take it, encrypt it, pack it...).
 	$(Q)mkdir -p $(PACKNAME)
 	$(Q)cp $(SKTARGET).sb3 $(A3PACK).psk
 	$(Q)cp $(A3PACK).psk $(PACKNAME)/$(A3PACK).psk
 	$(Q)cp $(SK)/lib/packcertificate.A3 $(PACKNAME)/$(PACKNAME).A3
-build_pmp:
+pmp:
 # We need to tell SK-GCC what to do with your .pmp file (take it, encrypt it, pack it...).
 	$(Q)mkdir -p $(PACKNAME)
 	$(Q)cp $(SKTARGET).pmp $(A3PACK).psk
