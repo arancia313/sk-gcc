@@ -44,7 +44,6 @@ build:
 # encrypted version of the file. It does this just by
 # copying the exact same file data, process them,
 # compress them and convert them into a mysterious psk format.
-	$(Q)cp $(SKTARGET).sb3 $(SKTARGET).psk
-	$(Q)mv $(SKTARGET).psk $(A3PACK).psk
+	$(Q)cp $(SKTARGET).sb3 $(A3PACK).psk
 ripe:
 	rm -rf $(SKTARGET).psk $(A3PACK).psk

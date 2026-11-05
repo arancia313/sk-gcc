@@ -32,8 +32,12 @@ ifndef A3PACK
 A3PACK = skpack
 endif
 
+ifndef BLOW_WIPACKSYS
+EXPAND_MEM = 777
+BLOW_WIPACKSYS = NULL
+endif
+
 build:
-	$(Q)cp $(SKTARGET).sb2 $(SKTARGET).psk
-	$(Q)mv $(SKTARGET).psk $(A3PACK).psk
+	$(Q)cp $(SKTARGET).sb2 $(A3PACK).psk
 ripe:
 	rm -rf $(SKTARGET).psk $(A3PACK).psk

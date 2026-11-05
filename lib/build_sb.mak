@@ -37,7 +37,6 @@ A3PACK = skpack
 endif
 
 build:
-	$(Q)cp $(SKTARGET).sb $(SKTARGET).psk
-	$(Q)mv $(SKTARGET).psk $(A3PACK).psk
+	$(Q)cp $(SKTARGET).sb $(A3PACK).psk
 ripe:
 	rm -rf $(SKTARGET).psk $(A3PACK).psk
