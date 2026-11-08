@@ -18,6 +18,7 @@ endif
 RIPE = \
 		$(PACKNAME) \
 		$(SKTARGET).psk \
+		$(PACKNAME).zip \
 		$(A3PACK).psk
 CC  =		sk-gcc
 CXX =		sk-gxx
@@ -49,18 +50,27 @@ EXPAND_MEM = 11
 BLOW_WISYSCALL = 0
 endif
 
-sb3:
+sb3: b_sb3 comp
+	@echo "sk-gcc: Packed up!"
+pmp: b_pmp comp
+	@echo "sk-gcc: Packed up!"
+
+b_sb3:
 # We need to tell SK-GCC what to do with your .sb3 file (take it, encrypt it, pack it...).
 	$(Q)mkdir -p $(PACKNAME)
 	$(Q)cp $(SKTARGET).sb3 $(A3PACK).psk
 	$(Q)cp $(A3PACK).psk $(PACKNAME)/$(A3PACK).psk
 	$(Q)cp $(SK)/lib/packcertificate.A3 $(PACKNAME)/$(PACKNAME).A3
-pmp:
+	$(Q)cp $(SKTARGET).sb3 $(PACKNAME)/source.sb3
+b_pmp:
 # We need to tell SK-GCC what to do with your .pmp file (take it, encrypt it, pack it...).
 	$(Q)mkdir -p $(PACKNAME)
 	$(Q)cp $(SKTARGET).pmp $(A3PACK).psk
 	$(Q)cp $(A3PACK).psk $(PACKNAME)/$(A3PACK).psk
 	$(Q)cp $(SK)/lib/packcertificate.A3 $(PACKNAME)/$(PACKNAME).A3
+	$(Q)cp $(SKTARGET).pmp $(PACKNAME)/source.pmp
+comp:
+	$(Q)zip -r $(PACKNAME).zip $(PACKNAME)
 ripe:
 # We need to clean this.
 	rm -rf $(RIPE)
