@@ -46,6 +46,9 @@ It will print something like:
 ```text
 sk-gcc: Just responded.
 ```
+
+## Building
+
 Now we can use an IDE like Visual Studio Code to connect it to your WSL distribution and ultimately
 **create our folder and insert our files inside it.**
 Use your File Explorer to get on your ~ and create a New Folder. Use something like TurboWarp Desktop
