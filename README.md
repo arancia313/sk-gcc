@@ -58,6 +58,7 @@ Let's add some very simple lines to the Makefile:
 ```makefile
 # the SK parameter is recommended to be on the top.
 # hint: replace thing on SKTARGET with the name of the file you want to use.
+# hint: A3PACK argument is the pack file name that SK-GCC will use.
 SK = $(SKGCC)
 SKTARGET = thing
 A3PACK = filth
