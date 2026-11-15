@@ -1,0 +1,2 @@
+RIPE = \
+	$(SKTARGET).psk

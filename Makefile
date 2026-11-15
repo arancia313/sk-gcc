@@ -12,5 +12,5 @@ radical:
 	$(Q)cp -r $(SK)/blash/blashmodules/maxinum.A3	$(SK)/blash/blashmodules/maxinum.A3O
 	$(Q)cp -r $(SK)/blash/blashmodules/lazybum.A3	$(SK)/blash/blashmodules/lazybum.A3O
 	$(Q)cp -r $(SK)/blash/blashmodules		$(HOME)/blash
-clean:
+ripe:
 	$(Q)rm -rf $(SK)/blash/blashmodules/*.A3O
